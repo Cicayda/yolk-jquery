@@ -1,4 +1,4 @@
-(defproject yolk-jquery "0.1.0"
+(defproject yolk-jquery "0.2.0-SNAPSHOT"
   :description "Bacon and Eggs with jQuery"
   :url "https://github.com/cicayda/yolk-jquery"
   :license {:name "Eclipse Public License"
@@ -6,7 +6,7 @@
   :min-lein-version "2.0.0"
   :dependencies [[org.clojure/clojure "1.4.0"]
                  [jayq "2.2.0"]
-                 [yolk "0.1.0"]]
+                 [yolk "0.2.0-SNAPSHOT"]]
   :plugins [[lein-cljsbuild "0.3.0"]]
   :cljsbuild {:builds
               {:main
