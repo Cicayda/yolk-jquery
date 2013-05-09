@@ -44,6 +44,14 @@
                 ((if x?  j/add-class j/remove-class)
                  $elem klass))))
 
+(defn on-click
+  ([$elem f]
+     (-> (click $elem)
+         (b/on-value f)))
+  ([$elem selector f]
+     (-> (click $elem selector)
+         (b/on-value f))))
+
 (defn show
   ([$elem property]
      (show $elem property nil))
