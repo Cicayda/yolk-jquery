@@ -10,3 +10,7 @@
          :type "POST"
          :data {:remote name
                 :params (pr-str (vec params))}}))
+
+(defn on-remote [name params f]
+  (-> (apply remote name params)
+      (b/on-value f)))
