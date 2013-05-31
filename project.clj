@@ -1,4 +1,4 @@
-(defproject yolk-jquery "0.4.0"
+(defproject yolk-jquery "0.5.0"
   :description "Bacon and Eggs with jQuery"
   :url "https://github.com/cicayda/yolk-jquery"
   :license {:name "Eclipse Public License"
