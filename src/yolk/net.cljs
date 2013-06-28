@@ -6,13 +6,13 @@
   (js/Bacon.UI.ajax (clj->js params)))
 
 (defn remote [name & params]
-  (ajax {:url "_fetch"
+  (ajax {:url "/_fetch"
          :type "POST"
          :data {:remote name
                 :params (pr-str (vec params))}}))
 
 (defn remote-poll [bus timeout name params]
-  (->  (j/ajax {:url "_fetch"
+  (->  (j/ajax {:url "/_fetch"
                 :type "POST"
                 :data {:remote name
                        :params (pr-str (vec params))}})
